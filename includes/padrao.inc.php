@@ -1,6 +1,5 @@
 <?php
-    // Headers //
-    session_cache_expire(180000); //dEIXAR A SESSÃO UM BOM TEMPO SEM EX
+  session_cache_expire(180000); //dEIXAR A SESSÃO UM BOM TEMPO SEM EX
         if( intval(strpos($_SERVER["REQUEST_URI"], "controller.php")) > 0 ){
             header('Content-type: application/json');
             header("Access-Control-Allow-Origin: *");
