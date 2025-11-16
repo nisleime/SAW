@@ -1,4 +1,5 @@
-FROM php:8.1-apache
+FROM php:8.2-apache
 
-# Copia o código fonte do projeto para o diretório padrão do servidor web do Apache
-COPY . /var/www/html
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+
+COPY . /var/www/html/
