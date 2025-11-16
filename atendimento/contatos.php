@@ -1,5 +1,3 @@
-<span id="msgContatos"></span>
-
 <?php
 	// Quando vier pela Pesquisa, passa por aqui //
 	if( !isset($conexao) ){
@@ -154,7 +152,7 @@
 			</div>';
 	}
 ?>
-
+<span id="msgContatos"></span>
 <script type='text/javascript' src="cadastros/contatos/contatosList.js"></script>
 <script>
 	$(document).ready(function(){
