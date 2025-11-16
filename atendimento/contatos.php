@@ -51,7 +51,7 @@
 					if ($etiqueta != '0'){
 						$Consulta = $Consulta ." AND  tbe.cor = '$etiqueta'";  
 					   }
-					$Consulta = $Consulta . "group by tbc.numero ";
+					$Consulta = $Consulta . "group by tbc.numero, , tbe.cor ";
 					$Consulta = $Consulta . "  ORDER BY POSITION(upper('$pesquisa') IN upper(nome) ), upper(nome)";
 				}
 				
