@@ -7,7 +7,7 @@ services:
     networks:
       - atende
     environment:
-      DB_HOST: connect-mysql
+      DB_HOST: 172.20.0.6
       DB_USER: root
       DB_PASS: Ncm@647534
       DB_NAME: saw15
